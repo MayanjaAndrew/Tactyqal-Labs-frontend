@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-canvas: #eaf1f7;
+  --color-mint: #2dd4bf;
+  --color-mint-dark: #0f766e;
+  --font-sans: var(--font-plus-jakarta);
+  --font-heading: var(--font-outfit);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eaf1f7;
+  color: #0f172a;
+  font-family: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+  font-family: var(--font-outfit), var(--font-plus-jakarta), sans-serif;
+}
+
+::selection {
+  background: #2dd4bf;
+  color: #fff;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
